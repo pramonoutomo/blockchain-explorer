@@ -220,12 +220,66 @@ function selected(route: any, nav: NavLink) {
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Contabo
+            CONTABO
+          </div>
+        </a>
+        <a
+          href="https://lihat.info/vultr"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <img
+            src="https://i.imgur.com/DXzqfyo.png"
+            class="w-6 h-6 rounded-full mr-3"
+          />
+          <div
+            class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            VULTR
+          </div>
+        </a>
+        <a
+          href="https://lihat.info/ovh"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <img
+            src="https://i.imgur.com/TBz1X3z.png"
+            class="w-6 h-6 rounded-full mr-3"
+          />
+          <div
+            class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            OVH CLOUD
           </div>
         </a>
         
 
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">{{ $t('module.links') }}</div>
+        <a
+          href="https://docs.codeblocklabs.com/"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <Icon icon="mdi:code" class="text-xl mr-2" />
+          <div
+            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            Documentation
+          </div>
+        </a>
+        <a
+          href="https://youtube.com/@codeblocklabs"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <Icon icon="mdi:youtube" class="text-xl mr-2" />
+          <div
+            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            Youtube
+          </div>
+        </a>
         <a
           href="https://twitter.com/codeblocklabs"
           target="_blank"
