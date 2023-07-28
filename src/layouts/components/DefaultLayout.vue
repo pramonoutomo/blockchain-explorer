@@ -84,8 +84,8 @@ function selected(route: any, nav: NavLink) {
           class="collapse"
           :class="{
             'collapse-arrow': item?.children?.length > 0,
-            'collapse-open': index === 0 && sidebarOpen,
             'collapse-close': index === 0 && !sidebarOpen,
+            'collapse-open': index === 0 && sidebarOpen,
           }"
         >
           <input
