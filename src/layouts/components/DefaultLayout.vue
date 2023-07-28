@@ -28,7 +28,7 @@ blockchain.$subscribe((m, s) => {
 });
 
 const sidebarShow = ref(false);
-const sidebarOpen = ref(true);
+const sidebarOpen = ref(false);
 
 const changeOpen = (index: Number) => {
   if (index === 0) {
@@ -85,7 +85,7 @@ function selected(route: any, nav: NavLink) {
           :class="{
             'collapse-arrow': item?.children?.length > 0,
             'collapse-close': index === 0 && !sidebarOpen,
-            
+            'collapse-open': index === 0 && sidebarOpen,
           }"
         >
           <input
