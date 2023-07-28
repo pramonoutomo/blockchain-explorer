@@ -5,8 +5,8 @@
   >
     <div class="flex flex-1">
       &copy;&nbsp;
-      {{ new Date().getFullYear() }}&nbsp;
-      Made With&nbsp;
+      {{ new Date().getFullYear() }}
+      Managed by CodeBlockLabs Team & Powered With&nbsp;
       <img src="../../assets/images/heart.svg" />&nbsp;
       By&nbsp;
       <a
