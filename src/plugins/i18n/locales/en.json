@@ -17,16 +17,16 @@
     "favorite": "Favorite",
     "add_to_favorite": "Add to favorite",
     "all_blockchains": "All Blockchain",
-    "sponsors": "Sponsors",
+    "sponsors": "VPS Providers",
     "links": "Links"
   },
   "pages": {
-    "title": "Ping Dashboard",
+    "title": "CodeBlockLabs Cosmos Explorer",
     "title_all": "404",
     "tag": "Beta",
     "tag_all": "Page Not Found",
-    "slogan": "Ping Dashboard is not just an explorer but also a wallet and more ... 🛠",
-    "description": "Cosmos Ecosystem Blockchains 🚀",
+    "slogan": "A lightweight cosmos based chain explorer powered by Ping Dashboard",
+    "description": "Managed By CodeBlockLabs",
     "search_placeholder": "Search Chain",
     "description_all": "We couldn't find the page you are looking for.",
     "btn_index": "Back to Home"
