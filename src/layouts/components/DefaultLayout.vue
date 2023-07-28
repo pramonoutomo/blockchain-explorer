@@ -81,11 +81,11 @@ function selected(route: any, nav: NavLink) {
         <div
           v-if="isNavGroup(item)"
           :tabindex="index"
-          class="collapse collapse-close"
+          class="collapse"
           :class="{
             'collapse-arrow': item?.children?.length > 0,
             'collapse-close': index === 0 && !sidebarOpen,
-            'collapse-open': index === 0 && sidebarOpen,
+            
           }"
         >
           <input
