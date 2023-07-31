@@ -1,0 +1,33 @@
+{
+  "chain_name": "blockx",
+  "api": [
+    "https://blockx-api.codeblocklabs.com",
+    "https://blockxtest-api.strnan.top",
+    "https://api.blockx.roomit.xyz",
+    "https://api-test.blockx.hexnodes.co",
+    "https://api-blockx.nodeist.net",
+    "https://api-blockx.dnsarz.xyz"
+  ],
+  "rpc": [
+    "https://blockx-rpc.codeblocklabs.com", 
+    "https://blockxtest-rpc.strnan.top", 
+    "https://rpc.blockx.roomit.xyz", 
+    "https://rpc-test.blockx.hexnodes.co", 
+    "https://rpc-blockx.nodeist.net", 
+    "https://rpc-blockx.dnsarz.xyz"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.7",
+  "coin_type": "118",
+  "assets": [
+    {
+      "base": "abcx",
+      "symbol": "BCX",
+      "exponent": "6",
+      "coingecko_id": "blockx",
+      "logo": "/logos/blockx.png"
+    }
+  ],
+  "addr_prefix": "blockx",
+  "logo": "/logos/blockx.png"
+}
