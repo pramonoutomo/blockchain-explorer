@@ -2,23 +2,15 @@
   "chain_name": "blockx",
   "api": [
     "https://blockx-api.codeblocklabs.com",
-    "https://blockxtest-api.strnan.top",
-    "https://api.blockx.roomit.xyz",
-    "https://api-test.blockx.hexnodes.co",
-    "https://api-blockx.nodeist.net",
-    "https://api-blockx.dnsarz.xyz"
+    "https://api-blockx.nodeist.net"
   ],
   "rpc": [
-    "https://blockx-rpc.codeblocklabs.com", 
-    "https://blockxtest-rpc.strnan.top", 
-    "https://rpc.blockx.roomit.xyz", 
-    "https://rpc-test.blockx.hexnodes.co", 
-    "https://rpc-blockx.nodeist.net", 
-    "https://rpc-blockx.dnsarz.xyz"
+    "https://blockx-rpc.codeblocklabs.com",
+    "https://rpc-blockx.nodeist.net"
   ],
   "snapshot_provider": "",
   "sdk_version": "0.45.7",
-  "coin_type": "118",
+  "coin_type": "60",
   "assets": [
     {
       "base": "abcx",
