@@ -1,0 +1,24 @@
+{
+  "chain_name": "selfchain",
+  "api": [
+    "https://selfchain-api.codeblocklabs.com",
+    "https://api-t.self.nodestake.top"
+  ],
+  "rpc": [
+    "https://selfchain-rpc.codeblocklabs.com",
+    "https://rpc-t.self.nodestake.top"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.46.7",
+  "coin_type": "118",
+  "assets": [
+    {
+      "base": "self",
+      "symbol": "SELF",
+      "exponent": "18",
+      "logo": "/logos/selfchain.png"
+    }
+  ],
+  "addr_prefix": "self",
+  "logo": "/logos/selfchain.png"
+}
