@@ -4,6 +4,7 @@ import MdEditor from 'md-editor-v3';
 import ObjectElement from '@/components/dynamic/ObjectElement.vue';
 import {
   useBaseStore,
+  useBlockchain,
   useFormatter,
   useGovStore,
   useStakingStore,
@@ -28,6 +29,7 @@ const format = useFormatter();
 const store = useGovStore();
 const dialog = useTxDialog();
 const stakingStore = useStakingStore();
+const chainStore = useBlockchain();
 
 store.fetchProposal(props.proposal_id).then((res) => {
   const proposalDetail = reactive(res.proposal);
@@ -38,6 +40,20 @@ store.fetchProposal(props.proposal_id).then((res) => {
     });
   }
   proposal.value = proposalDetail;
+  // load origin params if the proposal is param change
+  if(proposalDetail.content?.changes) {
+    proposalDetail.content?.changes.forEach((item) => {  
+        chainStore.rpc.getParams(item.subspace, item.key).then((res) => {
+          if(proposal.value.content && res.param) {
+            if(proposal.value.content.current){
+              proposal.value.content.current.push(res.param);
+            } else {
+              proposal.value.content.current = [res.param];
+            };
+          }
+        })
+    })
+  }
 });
 
 const color = computed(() => {
@@ -169,14 +185,18 @@ function pageload(p: number) {
     pageResponse.value = x.pagination;
   });
 }
+
+function metaItem(metadata: string|undefined): { title: string; summary: string } {
+  return metadata ? JSON.parse(metadata) : {}
+}
 </script>
 
 <template>
   <div>
     <div class="bg-base-100 px-4 pt-3 pb-4 rounded mb-4 shadow">
-      <h2 class="card-title flex flex-col md:!justify-between md:!flex-row">
+      <h2 class="card-title flex flex-col md:!justify-between md:!flex-row mb-2">
         <p class="truncate w-full">
-          {{ proposal_id }}. {{ proposal.title || proposal.content?.title }}
+          {{ proposal_id }}. {{ proposal.title || proposal.content?.title || metaItem(proposal?.metadata)?.title  }}
         </p>
         <div
           class="badge badge-ghost"
@@ -194,9 +214,9 @@ function pageload(p: number) {
       <div class="">
         <ObjectElement :value="proposal.content" />
       </div>
-      <div v-if="proposal.summary && !proposal.content?.description">
+      <div v-if="proposal.summary && !proposal.content?.description || metaItem(proposal?.metadata)?.summary ">
         <MdEditor
-          :model-value="format.multiLine(proposal.summary)"
+          :model-value="format.multiLine(proposal.summary || metaItem(proposal?.metadata)?.summary)"
           previewOnly
           class="md-editor-recover"
         ></MdEditor>

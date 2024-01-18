@@ -24,10 +24,13 @@ export interface GovProposal {
   title?: string;
   summary?: string;
   proposal_id: string;
+  metadata?: string;
   content: {
     '@type': string;
     title?: string;
     description?: string;
+    current?: any[];
+    changes?: any[];
     plan?: {
       height?: string | number;
       time?: string | number;

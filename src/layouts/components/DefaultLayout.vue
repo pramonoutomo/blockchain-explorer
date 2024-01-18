@@ -18,17 +18,23 @@ import type { NavGroup, NavLink, NavSectionTitle, VerticalNavItems } from '../ty
 const dashboard = useDashboard();
 dashboard.initial();
 const blockchain = useBlockchain();
+blockchain.randomSetupEndpoint();
 
-const current = ref('');
+const current = ref(''); // the current chain
+const temp = ref('')
 blockchain.$subscribe((m, s) => {
+  if(current.value ===s.chainName && temp.value != s.endpoint.address) {
+    temp.value = s.endpoint.address
+    blockchain.initial();
+  }
   if (current.value != s.chainName) {
     current.value = s.chainName;
-    blockchain.initial();
+    blockchain.randomSetupEndpoint();
   }
 });
 
 const sidebarShow = ref(false);
-const sidebarOpen = ref(false);
+const sidebarOpen = ref(true);
 
 const changeOpen = (index: Number) => {
   if (index === 0) {
@@ -63,7 +69,7 @@ function selected(route: any, nav: NavLink) {
         <RouterLink to="/" class="flex items-center">
           <img class="w-10 h-10" src="../../assets/logo.svg" />
           <h1 class="flex-1 ml-3 text-2xl font-semibold dark:text-white">
-            Explorer
+            Ping.pub
           </h1>
         </RouterLink>
         <div
@@ -84,8 +90,8 @@ function selected(route: any, nav: NavLink) {
           class="collapse"
           :class="{
             'collapse-arrow': item?.children?.length > 0,
-            'collapse-close': index === 0 && !sidebarOpen,
             'collapse-open': index === 0 && sidebarOpen,
+            'collapse-close': index === 0 && !sidebarOpen,
           }"
         >
           <input
@@ -209,79 +215,68 @@ function selected(route: any, nav: NavLink) {
           {{ $t('module.sponsors') }}
         </div>
         <a
-          href="https://lihat.info/contabo"
+          href="https://osmosis.zone"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="https://i.imgur.com/cf8uo0S.png"
+            src="https://ping.pub/logos/osmosis.jpg"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            CONTABO
+            Osmosis
           </div>
         </a>
         <a
-          href="https://lihat.info/vultr"
+          href="https://celestia.org"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="https://i.imgur.com/DXzqfyo.png"
+            src="https://ping.pub/logos/celestia.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            VULTR
+            Celestia
           </div>
         </a>
         <a
-          href="https://lihat.info/ovh"
+          href="https://becole.com"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="https://i.imgur.com/TBz1X3z.png"
+            src="https://becole.com/static/logo/logo_becole.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            OVH CLOUD
+            Becole
           </div>
         </a>
-        
+
+          <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">
+            Tools
+          </div>
+          <RouterLink to="/wallet/suggest"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          >
+            <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
+            <div
+              class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+            >
+              Wallet Helper
+            </div>
+          </RouterLink>
 
         <div class="px-4 text-sm pt-2 text-gray-400 pb-2 uppercase">{{ $t('module.links') }}</div>
         <a
-          href="https://docs.codeblocklabs.com/"
-          target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <Icon icon="mdi:code" class="text-xl mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            Documentation
-          </div>
-        </a>
-        <a
-          href="https://youtube.com/@codeblocklabs"
-          target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
-        >
-          <Icon icon="mdi:youtube" class="text-xl mr-2" />
-          <div
-            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
-          >
-            Youtube
-          </div>
-        </a>
-        <a
-          href="https://twitter.com/codeblocklabs"
+          href="https://twitter.com/ping_pub"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
@@ -293,15 +288,28 @@ function selected(route: any, nav: NavLink) {
           </div>
         </a>
         <a
-          href="https://t.me/codeblocklabs"
+          v-if="showDiscord"
+          href="https://discord.com/invite/CmjYVSr6GW"
           target="_blank"
-          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
-          <Icon icon="mdi:telegram" class="text-xl mr-2" />
+          <Icon icon="mdi:discord" class="text-xl mr-2" />
           <div
             class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Telegram
+            Discord
+          </div>
+        </a>
+        <a
+          href="https://github.com/ping-pub/explorer/discussions"
+          target="_blank"
+          class="py-2 px-4 flex items-center rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <Icon icon="mdi:frequently-asked-questions" class="text-xl mr-2" />
+          <div
+            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            FAQ
           </div>
         </a>
       </div>
