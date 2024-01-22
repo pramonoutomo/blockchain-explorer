@@ -1,0 +1,22 @@
+{
+  "chain_name": "sge-mainnet",
+  "api": [
+    "https://sge-api.codeblocklabs.com"
+  ],
+  "rpc": [
+    "https://sge-rpc.codeblocklabs.com"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.7",
+  "coin_type": "60",
+  "assets": [
+    {
+      "base": "SGE",
+      "symbol": "SGE",
+      "exponent": "18",
+      "logo": "/logos/sge.jpg"
+    }
+  ],
+  "addr_prefix": "sge",
+  "logo": "/logos/sge.jpg"
+}
