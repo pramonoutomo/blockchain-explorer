@@ -129,6 +129,7 @@ function selected(route: any, nav: NavLink) {
               {{ item?.badgeContent }}
             </div>
           </div>
+		  <!--
           <div class="collapse-content">
             <div v-for="(el, key) of item?.children" class="menu bg-base-100 w-full !p-0">
               <RouterLink
@@ -168,9 +169,9 @@ function selected(route: any, nav: NavLink) {
               </RouterLink>
             </div>
           </div>
+		  -->
         </div>
 
-		<!--
         <RouterLink
           v-if="isNavLink(item)"
           :to="item?.to"
@@ -203,7 +204,7 @@ function selected(route: any, nav: NavLink) {
           >
             {{ item?.badgeContent }}
           </div>
-        </RouterLink>-->
+        </RouterLink>
         <div
           v-if="isNavTitle(item)"
           class="px-4 text-sm text-gray-400 pb-2 uppercase"
