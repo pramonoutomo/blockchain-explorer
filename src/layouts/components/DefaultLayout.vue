@@ -220,7 +220,7 @@ function selected(route: any, nav: NavLink) {
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="../logos/contabo.png"
+            src="../../../logos/contabo.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
@@ -235,7 +235,7 @@ function selected(route: any, nav: NavLink) {
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="../logos/vultr.png"
+            src="../../../logos/vultr.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
@@ -250,7 +250,7 @@ function selected(route: any, nav: NavLink) {
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="../logos/hetzner.png"
+            src="../../../logos/hetzner.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
