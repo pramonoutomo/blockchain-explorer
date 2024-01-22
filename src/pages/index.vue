@@ -53,6 +53,7 @@ const chainStore = useBlockchain()
       <progress class="progress progress-info w-80 h-1"></progress>
     </div>
 
+	<!--
     <div v-if="featured.length>0" class="text-center text-base mt-6 text-primary">
       <h2 class="mb-6"> Featured Blockchains 🔥 </h2>
     </div>
@@ -66,6 +67,7 @@ const chainStore = useBlockchain()
         :name="chain.chainName"
       />
     </div>
+	-->
 
     <div class="text-center text-base mt-6 text-primary">
       <h2 class="mb-6">{{ $t('pages.description') }}</h2>
