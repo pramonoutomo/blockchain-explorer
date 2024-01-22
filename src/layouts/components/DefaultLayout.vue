@@ -215,48 +215,48 @@ function selected(route: any, nav: NavLink) {
           {{ $t('module.sponsors') }}
         </div>
         <a
-          href="https://osmosis.zone"
+          href="https://Lihat.info/contabo"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="https://ping.pub/logos/osmosis.jpg"
+            src="https://ping.pub/logos/contabo.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Osmosis
+            Contabo
           </div>
         </a>
         <a
-          href="https://celestia.org"
+          href="https://lihat.info/vultr"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="https://ping.pub/logos/celestia.png"
+            src="https://ping.pub/logos/vultr.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Celestia
+            Vultr
           </div>
         </a>
         <a
-          href="https://becole.com"
+          href="https://lihat.info/hetzner"
           target="_blank"
           class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
         >
           <img
-            src="https://becole.com/static/logo/logo_becole.png"
+            src="https://becole.com/static/logo/hetzner.png"
             class="w-6 h-6 rounded-full mr-3"
           />
           <div
             class="text-sm capitalize flex-1 text-gray-600 dark:text-gray-200"
           >
-            Becole
+            Hetzner
           </div>
         </a>
 

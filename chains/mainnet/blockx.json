@@ -1,5 +1,5 @@
 {
-  "chain_name": "blockx",
+  "chain_name": "blockx-testnet",
   "api": [
     "https://blockx-api.codeblocklabs.com",
     "https://api-blockx.nodeist.net"
