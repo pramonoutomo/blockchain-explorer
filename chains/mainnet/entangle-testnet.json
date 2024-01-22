@@ -1,0 +1,22 @@
+{
+  "chain_name": "entangle-testnet",
+  "api": [
+    "https://entangle-api.codeblocklabs.com"
+  ],
+  "rpc": [
+    "https://entangle-rpc.codeblocklabs.com"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.7",
+  "coin_type": "60",
+  "assets": [
+    {
+      "base": "NGL",
+      "symbol": "NGL",
+      "exponent": "18",
+      "logo": "/logos/entangle.jpg"
+    }
+  ],
+  "addr_prefix": "ethm",
+  "logo": "/logos/entangle.jpg"
+}
