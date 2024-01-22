@@ -300,6 +300,18 @@ function selected(route: any, nav: NavLink) {
           </div>
         </a>
         <a
+          href="https://youtube.com/@CodeBlockLabs"
+          target="_blank"
+          class="py-2 px-4 flex items-center cursor-pointer rounded-lg hover:bg-gray-100 dark:hover:bg-[#373f59]"
+        >
+          <Icon icon="mdi:youtube" class="text-xl mr-2" />
+          <div
+            class="text-base capitalize flex-1 text-gray-600 dark:text-gray-200"
+          >
+            Youtube
+          </div>
+        </a>
+        <a
           v-if="showDiscord"
           href="https://discord.com/invite/CmjYVSr6GW"
           target="_blank"
