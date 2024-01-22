@@ -1,0 +1,22 @@
+{
+  "chain_name": "elys-testnet",
+  "api": [
+    "https://elys-api.codeblocklabs.com"
+  ],
+  "rpc": [
+    "https://elys-rpc.codeblocklabs.com"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.7",
+  "coin_type": "60",
+  "assets": [
+    {
+      "base": "ELYS",
+      "symbol": "ELYS",
+      "exponent": "18",
+      "logo": "/logos/elys.jpg"
+    }
+  ],
+  "addr_prefix": "elys",
+  "logo": "/logos/elys.jpg"
+}

@@ -1,0 +1,22 @@
+{
+  "chain_name": "noria-testnet",
+  "api": [
+    "https://noria-api.codeblocklabs.com"
+  ],
+  "rpc": [
+    "https://noria-rpc.codeblocklabs.com"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.7",
+  "coin_type": "60",
+  "assets": [
+    {
+      "base": "CRD",
+      "symbol": "CRD",
+      "exponent": "18",
+      "logo": "/logos/noria.jpg"
+    }
+  ],
+  "addr_prefix": "noria",
+  "logo": "/logos/noria.jpg"
+}
