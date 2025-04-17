@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import { Icon } from '@iconify/vue';
 import { computed, ref } from 'vue';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-app.component('font-awesome-icon', FontAwesomeIcon);
 
 // Components
 import newFooter from '@/layouts/components/NavFooter.vue';
