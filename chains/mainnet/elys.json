@@ -1,0 +1,30 @@
+{
+  "chain_name": "elys",
+  "registry_name": "elys",
+  "api": [
+      {"provider": "Inter Blockchain Services", "address": "https://elys-api.ibs.team"},
+      {"provider": "CodeBlockLabs", "address": "https://elys-api.codeblocklabs.com"},
+      {"provider": "Vinjan", "address": "https://api-elys.vinjan.xyz"},
+      {"provider": "ITRocket", "address": "https://elys-mainnet-api.itrocket.net"},
+      {"provider": "Polkachu", "address": "https://elys-api.polkachu.com"}
+  ],
+  "rpc": [
+      {"provider": "Inter Blockchain Services", "address": "https://elys-rpc.ibs.team"}, 
+      {"provider": "CodeBlockLabs", "address": "https://elys-rpc.codeblocklabs.com"},
+      {"provider": "Vinjan", "address": "https://rpc-elys.vinjan.xyz"},
+      {"provider": "ITRocket", "address": "https://elys-mainnet-rpc.itrocket.net:443"},
+      {"provider": "Polkachu", "address": "https://elys-rpc.polkachu.com:443"}
+  ],
+  "sdk_version": "0.50.9",
+  "coin_type": "118",
+  "min_tx_fee": "0",
+  "addr_prefix": "elys",
+  "logo": "/logos/elys.png",
+  "assets": [{
+      "base": "uelys",
+      "symbol": "ELYS",
+      "exponent": "6",
+      "coingecko_id": "elys-network", 
+      "logo": "/logos/elys.png"
+  }]
+}
