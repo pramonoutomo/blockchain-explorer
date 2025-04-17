@@ -18,9 +18,9 @@
       "base": "aNGL",
       "symbol": "NGL",
       "exponent": "6",
-      "logo": "/logos/entangle.png"
+      "logo": "/entangle.png"
     }
   ],
   "addr_prefix": "ent",
-  "logo": "/logos/entangle.png"
+  "logo": "/entangle.png"
 }
