@@ -1,0 +1,46 @@
+{
+  "chain_name": "sge-mainnet",
+  "api": [
+        {
+            "address": "https://sge-api.codeblocklabs.com",
+            "provider": "CodeBlockLabs"
+        },
+        {
+            "address": "https://sge-api.lavenderfive.com",
+            "provider": "LavenderFive"
+        },
+        {
+            "address": "https://rpc.sge.nodestake.top",
+            "provider": "NodeStake"
+        }
+    ],
+    "rpc": [
+        {
+            "address": "https://sge-rpc.codeblocklabs.com",
+            "provider": "CodeBlockLabs"
+        },
+        {
+            "address": "https://sge-rpc.lavenderfive.com",
+            "provider": "LavenderFive"
+        },
+        {
+            "address": "https://rpc.sge.nodestake.top",
+            "provider": "NodeStake"
+        }
+    ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.8",
+  "coin_type": "494",
+  "min_tx_fee": "8000",
+  "assets": [
+    {
+      "base": "usge",
+      "symbol": "SGE",
+      "exponent": "6",
+      "coingecko_id": "six-sigma",
+      "logo": "/logos/sge.png"
+    }
+  ],
+  "addr_prefix": "sge",
+  "logo": "/logos/sge.png"
+}
