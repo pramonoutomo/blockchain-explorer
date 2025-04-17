@@ -18,6 +18,7 @@
       "base": "aNGL",
       "symbol": "NGL",
       "exponent": "18",
+      "coingecko_id": "entangle",
       "logo": "https://explorer.codeblocklabs.com/entangle.png"
     }
   ],
