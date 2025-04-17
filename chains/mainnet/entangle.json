@@ -18,9 +18,9 @@
       "base": "aNGL",
       "symbol": "NGL",
       "exponent": "6",
-      "logo": "/entangle.png"
+      "logo": "https://explorer.codeblocklabs.com/entangle.png"
     }
   ],
   "addr_prefix": "ent",
-  "logo": "/entangle.png"
+  "logo": "https://explorer.codeblocklabs.com/entangle.png"
 }
