@@ -1,0 +1,22 @@
+{
+  "chain_name": "elys testnet",
+  "registry_name": "elys_testnet",
+  "api": [
+      {"provider": "CodeBlockLabs", "address": "https://elys-apitest.codeblocklabs.com"}
+  ],
+  "rpc": [
+      {"provider": "CodeBlockLabs", "address": "https://elys-rpctest.codeblocklabs.com"}
+  ],
+  "sdk_version": "0.50.9",
+  "coin_type": "118",
+  "min_tx_fee": "0",
+  "addr_prefix": "elys",
+  "logo": "/logos/elys.png",
+  "assets": [{
+      "base": "uelys",
+      "symbol": "ELYS",
+      "exponent": "6",
+      "coingecko_id": "elys-network", 
+      "logo": "/logos/elys.png"
+  }]
+}
