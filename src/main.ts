@@ -8,6 +8,11 @@ import LazyLoad from 'lazy-load-vue3';
 
 import router from './router';
 import { useBaseStore } from './stores/useBaseStore';
+import { createApp } from "vue";
+import App from "./App.vue";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 
 // Create vue app
 const app = createApp(App);
