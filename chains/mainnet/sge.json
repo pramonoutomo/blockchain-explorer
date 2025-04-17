@@ -1,17 +1,17 @@
 {
-  "chain_name": "sge-mainnet",
+  "chain_name": "sge",
   "api": [
         {
             "address": "https://sge-api.codeblocklabs.com",
             "provider": "CodeBlockLabs"
         },
         {
-            "address": "https://sge-api.lavenderfive.com",
-            "provider": "LavenderFive"
+            "address": "https://api-sge.nodeist.net",
+            "provider": "Nodeist"
         },
         {
-            "address": "https://rpc.sge.nodestake.top",
-            "provider": "NodeStake"
+            "address": "https://sge-rpc.polkachu.com",
+            "provider": "Polkachu"
         }
     ],
     "rpc": [
@@ -20,12 +20,12 @@
             "provider": "CodeBlockLabs"
         },
         {
-            "address": "https://sge-rpc.lavenderfive.com",
-            "provider": "LavenderFive"
+            "address": "https://rpc-sge.nodeist.net",
+            "provider": "Nodeist"
         },
         {
-            "address": "https://rpc.sge.nodestake.top",
-            "provider": "NodeStake"
+            "address": "https://sge-rpc.polkachu.com",
+            "provider": "Polkachu"
         }
     ],
   "snapshot_provider": "",
