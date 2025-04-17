@@ -1,0 +1,26 @@
+{
+  "chain_name": "entangle",
+  "api": [
+      {"provider": "IndoNode", "address": "https://api.entangle.indonode.net"},
+      {"provider": "CodeBlockLabs", "address": "https://entangle-api.codeblocklabs.com"},
+      {"provider": "NodeStake", "address": "https://api.entangle.nodestake.top"}
+  ],
+  "rpc": [
+      {"provider": "IndoNode", "address": "https://rpc.entangle.indonode.net"}, 
+      {"provider": "CodeBlockLabs", "address": "https://entangle-rpc.codeblocklabs.com"},
+      {"provider": "NodeStake", "address": "https://rpc.entangle.nodestake.top"}
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.45.7",
+  "coin_type": "60",
+  "assets": [
+    {
+      "base": "aNGL",
+      "symbol": "NGL",
+      "exponent": "6",
+      "logo": "/logos/entangle.png"
+    }
+  ],
+  "addr_prefix": "ent",
+  "logo": "/logos/entangle.png"
+}
