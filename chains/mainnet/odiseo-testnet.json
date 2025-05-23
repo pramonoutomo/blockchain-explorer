@@ -1,5 +1,5 @@
 {
-    "chain_name": "odiseo",
+    "chain_name": "odiseo testnet",
     "network_type": "testnet",
     "rpc": [
       {
