@@ -1,6 +1,6 @@
 {
-  "chain_name": "elys testnet",
-  "registry_name": "elys testnet",
+  "chain_name": "elys-testnet",
+  "registry_name": "elys-testnet",
   "api": [
       {"provider": "CodeBlockLabs", "address": "https://elys-apitest.codeblocklabs.com"}
   ],

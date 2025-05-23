@@ -1,5 +1,5 @@
 {
-    "chain_name": "lumera testnet",
+    "chain_name": "lumera-testnet",
     "network_type": "testnet",
     "rpc": [
       {
