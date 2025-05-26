@@ -1,0 +1,41 @@
+{
+    "chain_name": "symphony-testnet",
+    "network_type": "testnet",
+    "rpc": [
+         {
+          "address": "https://symphony-rpctest.codeblocklabs.com",
+          "provider": "CodeBlockLabs"
+         },
+         {
+          "address": "https://rpc-symphonyd.vinjan.xyz",
+          "provider": "Vinjan"
+         }
+    ],
+    "api": [
+        
+        {
+          "address": "https://symphony-apitest.codeblocklabs.com",
+          "provider": "CodeBlockLabs"
+        },
+        {
+          "address": "https://api-symphonyd.vinjan.xyz",
+          "provider": "Vinjan"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "symphony",
+    "logo": "https://explorer.codeblocklabs.com/symphony.png",
+    "assets": [
+      {
+        "base": "note",
+        "symbol": "MLD",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/symphony.png"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
