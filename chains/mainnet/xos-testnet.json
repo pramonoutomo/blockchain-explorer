@@ -1,0 +1,33 @@
+{
+    "chain_name": "xos-testnet",
+    "network_type": "testnet",
+    "rpc": [
+         {
+          "address": "https://xos-rpctest.codeblocklabs.com/",
+          "provider": "CodeBlockLabs"
+         }
+    ],
+    "api": [
+        
+        {
+          "address": "https://xos-apitest.codeblocklabs.com/",
+          "provider": "CodeBlockLabs"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "xos",
+    "logo": "https://explorer.codeblocklabs.com/xos.jpg",
+    "assets": [
+      {
+        "base": "uxos",
+        "symbol": "XOS",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/xos.jpg"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
