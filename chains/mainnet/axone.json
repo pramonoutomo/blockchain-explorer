@@ -1,0 +1,33 @@
+{
+    "chain_name": "axone",
+    "network_type": "mainnet",
+    "rpc": [
+         {
+          "address": "https://axone-rpc.codeblocklabs.com/",
+          "provider": "CodeBlockLabs"
+         }
+    ],
+    "api": [
+        
+        {
+          "address": "https://axone-api.codeblocklabs.com/",
+          "provider": "CodeBlockLabs"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "axone",
+    "logo": "https://explorer.codeblocklabs.com/xos.jpg",
+    "assets": [
+      {
+        "base": "uaxone",
+        "symbol": "AXONE",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/axone.jpg"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
