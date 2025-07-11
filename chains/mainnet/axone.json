@@ -19,7 +19,7 @@
     "coin_type": "118",
     "min_tx_fee": "0.025",
     "addr_prefix": "axone",
-    "logo": "https://explorer.codeblocklabs.com/xos.jpg",
+    "logo": "https://explorer.codeblocklabs.com/axone.jpg",
     "assets": [
       {
         "base": "uaxone",
