@@ -1,5 +1,5 @@
 {
-    "chain_name": "symphony-mainnet",
+    "chain_name": "symphony",
     "network_type": "mainnet",
     "rpc": [
          {
