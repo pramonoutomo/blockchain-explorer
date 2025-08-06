@@ -1,0 +1,41 @@
+{
+    "chain_name": "symphony-mainnet",
+    "network_type": "mainnet",
+    "rpc": [
+         {
+          "address": "https://symphony-rpc.codeblocklabs.com",
+          "provider": "CodeBlockLabs"
+         },
+         {
+          "address": "https://rpc-symphony.sr20de.xyz/",
+          "provider": "Sr20de"
+         }
+    ],
+    "api": [
+        
+        {
+          "address": "https://symphony-api.codeblocklabs.com",
+          "provider": "CodeBlockLabs"
+        },
+        {
+          "address": "https://api-symphony.sr20de.xyz/",
+          "provider": "Sr20de"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "symphony",
+    "logo": "https://explorer.codeblocklabs.com/symphony.png",
+    "assets": [
+      {
+        "base": "note",
+        "symbol": "MLD",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/symphony.png"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
