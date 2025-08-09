@@ -1,0 +1,40 @@
+{
+    "chain_name": "empeiria-testnet",
+    "network_type": "testnet",
+    "rpc": [
+      {
+        "address": "https://rpc-testnet.empe.io",
+        "provider": "Empeiria Team"
+      },
+      {
+        "address": "https://empe-rpctest.codeblocklabs.com",
+        "provider": "CodeBlockLabs.com"
+      }
+    ],
+    "api": [
+      {
+        "address": "https://lcd-testnet.empe.io",
+        "provider": "Empeiria Team"
+      },
+      {
+        "address": "https://empe-apitest.codeblocklabs.com",
+        "provider": "CodeBlockLabs"
+      }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "empe",
+    "logo": "https://explorer.codeblocklabs.com/empe.png",
+    "assets": [
+      {
+        "base": "uempe",
+        "symbol": "EMPE",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/empe.png"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
