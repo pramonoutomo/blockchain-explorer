@@ -24,7 +24,7 @@
       {
         "base": "ubadge",
         "symbol": "BADGE",
-        "exponent": "18",
+        "exponent": "9",
         "logo": "https://explorer.codeblocklabs.com/bitbadges.png"
       }
     ],
