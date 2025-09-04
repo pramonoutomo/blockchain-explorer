@@ -1,0 +1,33 @@
+{
+    "chain_name": "intento",
+    "network_type": "mainnet",
+    "rpc": [
+         {
+          "address": "https://rpc.intento.ccnodes.com/",
+          "provider": "CCNodes"
+         }
+    ],
+    "api": [
+        
+        {
+          "address": "https://api.intento.ccnodes.com/",
+          "provider": "CCNodes"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "into",
+    "logo": "https://explorer.codeblocklabs.com/into.png",
+    "assets": [
+      {
+        "base": "uinto",
+        "symbol": "INTO",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/into.png"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
