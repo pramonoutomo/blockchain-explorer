@@ -22,9 +22,9 @@
     "logo": "https://explorer.codeblocklabs.com/union.png",
     "assets": [
       {
-        "base": "ugas",
+        "base": "au",
         "symbol": "U",
-        "exponent": "18",
+        "exponent": "36",
         "logo": "https://explorer.codeblocklabs.com/union.png"
       }
     ],
