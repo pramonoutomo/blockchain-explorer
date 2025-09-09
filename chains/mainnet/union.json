@@ -1,0 +1,33 @@
+{
+    "chain_name": "union",
+    "network_type": "mainnet",
+    "rpc": [
+         {
+          "address": "https://union-rpc.codeblocklabs.com/",
+          "provider": "CodeBlockLabs"
+         }
+    ],
+    "api": [
+        
+        {
+          "address": "https://union-api.codeblocklabs.com/",
+          "provider": "CodeBlockLabs"
+        }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "union",
+    "logo": "https://explorer.codeblocklabs.com/union.png",
+    "assets": [
+      {
+        "base": "ugas",
+        "symbol": "U",
+        "exponent": "9",
+        "logo": "https://explorer.codeblocklabs.com/union.png"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }
