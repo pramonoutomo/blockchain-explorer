@@ -4,14 +4,14 @@
     "rpc": [
          {
           "address": "https://union-rpc.codeblocklabs.com/",
-          "provider": "CodeBlockLabs"
+          "provider": "CodeBlockLabs "
          }
     ],
     "api": [
         
         {
           "address": "https://union-api.codeblocklabs.com/",
-          "provider": "CodeBlockLabs"
+          "provider": "CodeBlockLabs "
         }
     ],
     "snapshot_provider": "",
@@ -24,7 +24,7 @@
       {
         "base": "au",
         "symbol": "U",
-        "exponent": "19",
+        "exponent": "18",
         "logo": "https://explorer.codeblocklabs.com/union.png"
       }
     ],
