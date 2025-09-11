@@ -19,13 +19,13 @@
     "coin_type": "118",
     "min_tx_fee": "0.025",
     "addr_prefix": "paxi",
-    "logo": "https://explorer.codeblocklabs.com/paxi.webp",
+    "logo": "https://explorer.codeblocklabs.com/paxi.jpg",
     "assets": [
       {
         "base": "upaxi",
         "symbol": "PAXI",
         "exponent": "6",
-        "logo": "https://explorer.codeblocklabs.com/paxi.webp"
+        "logo": "https://explorer.codeblocklabs.com/paxi.jpg"
       }
     ],
     "keplr_features": [
