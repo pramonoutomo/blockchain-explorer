@@ -3,12 +3,20 @@
     "network_type": "mainnet",
     "rpc": [
          {
+          "address": "https://rpc.intento.nodestake.org/",
+          "provider": "NodeStake"
+         },
+         {
           "address": "https://rpc.intento.ccnodes.com/",
           "provider": "CCNodes"
          }
     ],
     "api": [
         
+        {
+          "address": "https://api.intento.nodestake.org/",
+          "provider": "NodeStake"
+        },
         {
           "address": "https://api.intento.ccnodes.com/",
           "provider": "CCNodes"
