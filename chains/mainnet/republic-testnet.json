@@ -41,22 +41,14 @@
     "sdk_version": "0.50.13",
     "coin_type": "118",
     "min_tx_fee": "0.025",
-    "addr_prefix": "lumera",
-    "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumera/images/lumera.png",
+    "addr_prefix": "rai",
+    "logo": "https://explorer.codeblocklabs.com/republic.png",
     "assets": [
       {
-        "base": "ulume",
-        "symbol": "LUME",
-        "exponent": "6",
-        "logo": "https://raw.githubusercontent.com/cosmos/chain-registry/master/lumera/images/lumera.png"
+        "base": "arai",
+        "symbol": "RAI",
+        "exponent": "18",
+        "logo": "https://explorer.codeblocklabs.com/republic.png"
       }
-    ],
-    "keplr_features": [
-    ],
-    "faucet": {
-          "amount": "1000000ulume",
-          "ip_limit": "1",
-          "address_limit": "10",
-          "fees": "5000ulume"
-      }
+    ]
   }
