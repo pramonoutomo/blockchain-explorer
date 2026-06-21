@@ -10,7 +10,7 @@
     "api": [
         
         {
-          "address": "https://pushchain-apitest.codeblocklabs.com/",
+          "address": "https://pushchain-apitest.codeblocklabs.com",
           "provider": "CodeBlockLabs"
         }
     ],
