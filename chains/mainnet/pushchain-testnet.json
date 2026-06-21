@@ -1,5 +1,5 @@
 {
-    "chain_name": "pushchain",
+    "chain_name": "pushchain-testnet",
     "network_type": "testnet",
     "rpc": [
          {
