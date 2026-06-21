@@ -18,13 +18,13 @@
     "sdk_version": "0.50.13",
     "coin_type": "118",
     "min_tx_fee": "0.025",
-    "addr_prefix": "trb",
+    "addr_prefix": "yjay",
     "logo": "https://explorer.codeblocklabs.com/jay.jpg",
     "assets": [
       {
-        "base": "loya",
-        "symbol": "TRB",
-        "exponent": "6",
+        "base": "ujay",
+        "symbol": "JAY",
+        "exponent": "18",
         "logo": "https://explorer.codeblocklabs.com/jay.jpg"
       }
     ],
