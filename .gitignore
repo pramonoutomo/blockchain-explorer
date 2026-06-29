@@ -6,3 +6,7 @@ dist
 # macOS Finder metadata
 .DS_Store
 **/.DS_Store
+.DS_Store
+chains/.DS_Store
+chains/mainnet/.DS_Store
+public/.DS_Store
