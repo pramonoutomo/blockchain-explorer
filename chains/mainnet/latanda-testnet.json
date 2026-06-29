@@ -1,0 +1,40 @@
+{
+    "chain_name": "latanda-testnet",
+    "network_type": "testnet",
+    "rpc": [
+      {
+        "address": "https://rpc-t.latanda.vinjan-inc.com",
+        "provider": "Vinjan"
+      },
+      {
+        "address": "https://latanda-rpctest.codeblocklabs.com/",
+        "provider": "CodeBlockLabs"
+      }
+    ],
+    "api": [
+      {
+        "address": "https://api-t.latanda.vinjan-inc.com",
+        "provider": "Vinjan"
+      },
+      {
+        "address": "https://latanda-apitest.codeblocklabs.com/",
+        "provider": "CodeBlockLabs"
+      }
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.13",
+    "coin_type": "118",
+    "min_tx_fee": "0.025",
+    "addr_prefix": "ltd",
+    "logo": "https://explorer.codeblocklabs.com/latanda.jpg",
+    "assets": [
+      {
+        "base": "ultd",
+        "symbol": "LTD",
+        "exponent": "6",
+        "logo": "https://explorer.codeblocklabs.com/latanda.jpg"
+      }
+    ],
+    "keplr_features": [
+    ]
+  }

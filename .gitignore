@@ -3,3 +3,6 @@ node_modules/
 yarn-error.log
 dist
 .idea
+# macOS Finder metadata
+.DS_Store
+**/.DS_Store
