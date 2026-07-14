@@ -5,12 +5,20 @@
     {
       "address": "https://limonata-rpctest.codeblocklabs.com",
       "provider": "CodeBlockLabs "
+    },
+    {
+      "address": "https://rpc.limonata.xyz:443",
+      "provider": "LimoDev "
     }
   ],
   "api": [
     {
       "address": "https://limonata-apitest.codeblocklabs.com",
       "provider": "CodeBlockLabs "
+    },
+    {
+      "address": "https://rest.limonata.xyz",
+      "provider": "LimoDev "
     }
   ],
   "snapshot_provider": "",

@@ -66,4 +66,9 @@ export default defineConfig({
   optimizeDeps: {
     entries: ['./src/**/*.vue'],
   },
+  server: {
+    watch: {
+      ignored: ['**/.git/**'],
+    },
+  },
 });
