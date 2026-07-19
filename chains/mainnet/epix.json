@@ -1,0 +1,39 @@
+{
+  "chain_name": "limonata-testnet",
+  "network_type": "testnet",
+  "rpc": [
+    {
+      "address": "https://epix-rpc.codeblocklabs.com",
+      "provider": "CodeBlockLabs "
+    },
+    {
+      "address": "https://rpc-epix.vinjan-inc.com",
+      "provider": "Vinjan "
+    }
+  ],
+  "api": [
+    {
+      "address": "https://epix-api.codeblocklabs.com",
+      "provider": "CodeBlockLabs "
+    },
+    {
+      "address": "https://api-epix.vinjan-inc.com",
+      "provider": "Vinjan "
+    }
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.50.13",
+  "coin_type": "60",
+  "min_tx_fee": "0.025",
+  "addr_prefix": "epix",
+  "logo": "https://explorer.codeblocklabs.com/epix.png",
+  "assets": [
+    {
+      "base": "aepix",
+      "symbol": "EPIX",
+      "exponent": "18",
+      "logo": "https://explorer.codeblocklabs.com/epix.png"
+    }
+  ],
+  "keplr_features": []
+}
