@@ -1,6 +1,6 @@
 {
-  "chain_name": "limonata-testnet",
-  "network_type": "testnet",
+  "chain_name": "epix",
+  "network_type": "mainnet",
   "rpc": [
     {
       "address": "https://epix-rpc.codeblocklabs.com",
